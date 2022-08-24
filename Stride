@@ -1,0 +1,26 @@
+strided keys list
+# Список кошельков 
+
+strided keys add wallet --recover
+# Восстановление кошелька по мнемонике
+
+strided q bank balances Твой кошелёк
+# Баланс кошелька
+
+strided tx staking delegate Валопер 1000000ustrd --from Кошелёк --chain-id STRIDE-TESTNET-4 --gas-prices 0.1ustrd --gas-adjustment 1.2 --gas auto -y
+# Делегация валидатору
+
+strided query tx <YOUR_TX_ID>
+# Подробности транзакции
+
+sudo systemctl daemon-reload
+sudo systemctl enable strided
+sudo systemctl restart strided
+# Рестарт ноды
+
+sudo systemctl status strided
+# Статус ноды
+
+sudo journalctl -u strided -f --no-hostname -o cat
+# Логи
+
