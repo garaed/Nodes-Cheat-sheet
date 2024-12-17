@@ -22,5 +22,5 @@ sudo systemctl status strided
 # Статус ноды
 
 sudo journalctl -u strided -f --no-hostname -o cat
-# Логи
+# Логи / logs
 
